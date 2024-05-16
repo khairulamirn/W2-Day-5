@@ -334,7 +334,7 @@ footer > p {
 }
 
 /* MOBILE RESPONSIVENESS */ 
-@media (max-width: 428px) {
+@media (max-width: 430px) {
     
     section {
         padding: 10px;
