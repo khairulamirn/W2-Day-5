@@ -43,6 +43,7 @@ section#text {
     height: 550px;
     width: 1076px;
     display: flex;
+    flex-direction: row;
 }
 
 section#text > div {
@@ -54,7 +55,7 @@ section#text > div {
 section#text > div > h2 {
     line-height: 60px;
     margin-top: 30px;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 64px;
     color: #272D38;
     width: 550px;
@@ -79,6 +80,7 @@ section#text > div > button {
     border: 1px solid #8EADD5;
     border-radius: 10px;
     font-size: 16px;
+    font-weight: 600;
     color: white;
     width: 167px;
     height: 48px;
@@ -92,7 +94,7 @@ section#social {
 section#social > p {
     margin: 20px auto;
     font-size: 16px;
-    height: 16px;
+    height: auto;
     width: 250px;
 }
 
@@ -107,6 +109,7 @@ section#social > div {
 }
 
 section#social > div > img {
+    width: 163px;
     height: 48px;
 }
 
@@ -129,7 +132,7 @@ section#branding > img {
 section#branding > div > h2 {
     line-height: 50px;
     margin-top: 70px;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
     color: #272D38;
     width: 435.69px;
@@ -146,6 +149,10 @@ section#branding > div > p {
     line-height: 1.7;
 }
 
+section#branding > div > img {
+    transform: none;
+}
+
 section#custome {
     width: 1065px;
     margin: 0 auto;
@@ -159,7 +166,7 @@ section#custome {
 section#custome > div > h2 {
     line-height: 50px;
     margin-top: 30px;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
     color: #272D38;
     width: 550px;
@@ -171,6 +178,10 @@ section#custome > div > p {
     margin-bottom: 15px;
     line-height: 1.7;
 }
+
+section#custome > div > img {
+    transform: none;
+} 
 
 section#custome > img {
     height: 450px;
@@ -192,7 +203,7 @@ section#testimonials > h2 {
     margin-bottom: 40px;
     margin-left: 314px;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
     width: 435.69px;
     height: 102.35px;
@@ -241,6 +252,7 @@ section#part {
 }
 
 section#part > img {
+    display: block;
     margin-left: 75px;
     height: 450px;
     width: 450px;
@@ -272,6 +284,7 @@ section#part > div > button {
     border: 1px solid #8EADD5;
     border-radius: 10px;
     font-size: 16px;
+    font-weight: 600;
     color: white;
     width: 167px;
     height: 48px;
@@ -321,15 +334,19 @@ footer > p {
 }
 
 /* MOBILE RESPONSIVENESS */ 
-@media (max-width: 1200px) {
+@media (max-width: 428px) {
     
     section {
-        padding: 0px;
+        padding: 10px;
     }
 
-    section#hero > #nav-bar {
+    section#hero {
+        height: 100px;
+        width: auto;
         display: flex;
         flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
     }
 
     section#hero > #nav-bar > a { 
@@ -341,11 +358,302 @@ footer > p {
     }
     
     section#text {
+        width: auto;
+        height: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
+        align-items: center;
     }
 
     section#text > div {
         text-align: center;
+        width: auto;
+        margin-bottom: 50px;
     }
+
+    section#text > div > h2 {
+        font-size: 40px;
+        text-align: center;
+        width: 378px;
+        height: 120px;
+        line-height: 40px;
+    }
+
+    section#text > div > p {
+        margin: 30px auto;
+        font-size: 16px;
+        width: 378px;
+        height: 56px;
+        text-align: center;
+        line-height: auto;
+    }
+
+    section#text > div > button {
+        margin-top: auto;
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
+    }
+    section#text > img {
+        margin-right: 0;
+        width: 358px;
+        height: 358px;
+    }
+
+    section#social {
+        width: auto;
+    }
+
+    section#social > div {
+        margin: 0 auto;
+        width: 380px;
+        height: 86px;
+    }
+
+    section#social > p {
+        text-align: center;
+        font-size: 14px;
+        width: auto;
+    }
+
+    section#social > div > img {
+        width: 80px;
+        height: 25px;
+    }
+
+    section#social > div > #zoom {
+        width: 49px;
+    }
+
+    section#branding {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        align-items: center;
+    }
+    
+    section#branding > img {
+        margin-top: 0px;
+        width: 375px;
+        height: 384px;
+    }
+    
+    section#branding > div {
+        display: flex;
+        flex-direction: column;
+
+    }
+    section#branding > div > h2 {
+        line-height: 35px;
+        width: 380px;
+        height: 76px;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    section#branding > div > p {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        text-align: center;
+        width: 380px;
+        height: 53px;
+        font-size: 14px;
+    }
+    
+    section#branding > div > img {
+        transform: rotate(90deg);
+        margin: 20px auto;
+    } 
+
+    section#custome {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section#custome > div {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#custome > div > h2 {
+        text-align: center;
+        line-height: 35px;
+        font-size: 32px;
+        width: 380px;
+        height: 76px;
+    }
+    section#custome > div > p {
+        text-align: center;
+        font-size: 14px;
+        width: 380px;
+        height: 53px;
+    }
+
+    section#custome > div > img {
+        transform: rotate(90deg);
+        margin: 10px auto;
+    } 
+    
+    section#custome > img {
+        height: 380px;
+        width: 380px;
+    }
+
+    section#testimonials {
+        width: 380px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section#testimonials > p {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    section#testimonials > h2 {
+        line-height: 35px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 32px;
+        width: 380px;
+        height: 65px;
+    }
+    
+    section#testimonials > .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+        gap: 40px;  
+    }
+    
+    section#testimonials > .box > div {
+        width: 374px;
+        height: 334px;
+        text-align: center;
+    }
+    
+    section#testimonials > .box > div > img {
+        width: 141.71px;
+        height: 130px;
+    }
+    
+    section#testimonials > .box > div > p {
+        font-size: 14px;
+        width: 308.69px;
+        height: 77px;
+    }
+
+    section#part {
+        margin: 60px auto;
+        border-radius: 20px;
+        width: 379px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    section#part > img {
+        display: none;
+    }
+
+    section#part > div {
+        width: 379px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section#part > div > h2 {
+        text-align: center;
+        padding: 20px;
+        margin: 40px auto 20px auto;
+        font-size: 32px;
+        width: 361px;
+        height: 102.1px;
+        line-height: 35px;
+    }
+    
+    section#part > div > p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 0;
+        width: 306px;
+        height: 52px;
+        margin-bottom: 15px;
+        line-height: 1.7;
+    }
+    
+    section#part > div > button {
+        font-size: 14px;
+        margin-bottom: 40px;
+        width: 167px;
+        height: 48.05px;
+    }
+
+    footer {
+        width: 428px;
+        height: auto;
+    }
+    
+    footer > #bottom {
+        margin: 0 auto;
+        width: 428px;   
+        height: 1140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    footer > #bottom > .div {
+        width: 189.29px;
+        height: 110px;
+    } 
+
+    footer > #bottom > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+        height: 194px;
+    }
+
+    footer > #bottom > .div > h4 {
+        margin-top: 100px;
+    } 
+    footer > #bottom > div > h4 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    
+    footer > #bottom > div > a {
+        margin-top: 20px;
+    }
+    footer > #bottom > div > p {
+        text-align: center;
+        margin-top: 30px;
+        width: 189.29px;
+        height: 48px;
+    }
+    
+    footer > p {
+        font-size: 12px;
+        padding-bottom: 20px;
+        margin-top: 80px;
+        text-align: center;
+    }
+}
